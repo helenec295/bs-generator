@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+
+   <!--calculates two numbers and displays result-->
+
+    <input type="text" name="n1" id="n1"><br><br>
+
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+    </select><br><br> 
+
+    <input type="text" name="n2" id="n2"><br><br>
+
+    <button onclick="calc()";>=</button><br><br>
+
+    <input type="text" id="result" name="result">
+
+    <!--calculates student average-->
+
+    <h2>Student Marks Calculation System - JavaScript</h2>
+    <form name="form1">
+        <b>Enter Marks 1:</b><INPUT type="text" name="txtNum1"> </br><br>
+        <b>Enter Marks 2:</b><INPUT type="text" name="txtNum2"> </br><br>
+        <b>Enter Marks 3:</b><INPUT type="text" name="txtNum3"> </br><br>
+  
+       <INPUT type="button" Value="Calculate" onClick='Calculate()'>
+    </form>
+
+
+    
+
+
+    <script src="/pages/calculator.js"></script>
+</body>
+</html>
