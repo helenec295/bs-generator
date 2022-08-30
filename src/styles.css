@@ -1,426 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-body {
+html {
+    font-size: 10px;
     font-family: 'Open Sans', sans-serif;
 }
 
-section {
-    background-color: white;
-    /*border: solid black 1px;*/
-    
-}
-
-/*text styles*/
-
-h1 {
-    font-size: 90px;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    font-size: 50px;
-    
-}
-
-p {
-    margin: 0;
-    font-size: 28px;
-    font-weight: 300px;
-}
-
-.subtext {
-    font-size: 15px;
-    font-weight: 300px;
-    
-}
-
-/*navigation styles*/
-
-nav {
-    display: flex; 
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 24px;
-    
-}
-
-li {
-    /* width: 200px; */
-    text-decoration: none; 
-}
-
-.hamburger {
-    display: none;
-}
-
-.hamburger:focus {
-    outline: 0;
-}
-
-
-
-/*hero section styles*/
-
-.hero {
-    /*background-color: #1c1d25;*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/images/helen-evenchen-homepage-banner.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
-    color: white;
-    font-size: 40px;
-    
-}
-
-.hero-area {
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero-text {
-   margin-left: 80px; 
-   margin-bottom: 200px;
-}
-
-.hero-text h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 80px;
-    font-weight: 800;
-}
-
-.button {
-   width: 200px;
-   line-height: 40px; 
-   border-radius: 30px;
-   background-color: #EFC050;
-   text-align: center;
-   margin-top: 20px;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   font-size: 25px;
-   font-weight: 300px;
-   transition-property: background-color;
-   transition-duration: 750ms; 
-   transition-timing-function: ease-out;
-   }
-
-.button:hover {
-    background-color: #333333;
-    
-}
-
-.button:active {
-    background-color: #a9a9a9;
-    color: #808080
-}
-
-.logo {
-    height: 100px;
-    margin: 30px;
-}
-
-.social {
-    margin: 20px;
-    display: flex;
-}
-
-.socials {
-    padding-bottom: 200px;
-}
-
-/*about section styles*/
-
-.about {
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
-}
-
-
-.about-container p {
-    font-size: 24px;
-}
-
-.headshot-container {
-    display: flex;
-    align-items: center;
-}
-
-.headshot {
-    width: 250px;
-    border-radius: 150px;
-    
-}
-
-/*project section styles*/
-
-.projects-section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 80px;
-}
-
-.project-card {
-    width: 250px;
-    height: 500px;
-    box-shadow: 5px 5px 20px #505050;  
-    margin: 10px;
-}
-
-.project-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-.project-image {
-    margin-top: 25px;
-    width: 225px;
-    border-radius: 125px;
-}
-
-hr {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.project-link {
-   text-decoration: none; 
-   color: #EFC050;
-}
-
 a {
-    text-decoration: none;
-    color: white;
-
+    text-decoration: none;   
 }
 
-
-
-/*contact form styles*/
-
-.contact-form {
-    background-color: #ededed;
-    padding-top: 40px;
-    padding-bottom: 80px;
-}
-
-.contact-form h2 {
-    text-align: center;
-}
-
-.form-center {
-    display: block;
-    justify-content: center;
-}
-
-.form-center form {
-    width: 40vw;
-    margin-left: 30vw;
-    background-color: lightblue;
-    justify-content: center;
-    box-shadow: 5px 5px 20px #505050;  
-    padding-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 10px;
-    margin-left: 5%;
-    margin-right: 5%;    
-}
-
-label {
-    display: block;
-    text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-input[type='text'],
-input[type='email'] {
-    width: 90%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 0.5rem 0.7rem;
-    transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus {
-    border-color: #7db0fb;
-    outline: 0;
-    box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);
-}
-
-textarea {
-    width: 90%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 0.5rem 0.7rem;
-    transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-textarea:focus {
-    border-color: #7db0fb;
-    outline: 0;
-    box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);
-}
-
-
-.form-submit-button {
-    background: #0d6efd;
-    color: #fff;
-    border: 0;
-    padding: 0.5rem 0.7rem;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 5px;
-    outline: 0;
-}
-
-/*footer styles*/
-
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 80px;
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-/*responsive styles for small screens < 1000px*/
+/*hero section*/
 
-@media only screen and (max-width: 1000px) {
-    .project-container {
-        display: flex;
-        flex-wrap: wrap-reverse;
-    }
+#hero {
+    background-image: url(./images/helen-evenchen-homepage-banner.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
 
-    .about-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
 
-    .about-container p {
-        font-size: 18px;
-    }
+#hero h1 {
+    font-family: 'Josefin Sans', sans-serif;
 
-    .about {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-
-    .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
-    }
-
-    ul {
-        display: none;
-        background-color: transparent;
-        margin: 0 0 20px 0;
-    }
-
-    ul.show {
-        display: flex;
-        flex-direction: row;
-        margin: 0px;
-        padding: 0px;
-        justify-content: flex-start;
-        margin: 0 10px 0 10px;        
-    }
-
-    ul.show li {
-        padding: 0 10px 0 10px;
-        font-size: 18px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: transparent;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .headshot {
-        margin-top: 50px;
-        width: 200px;
-    }
-
-    .hero-area {
-        display: flex;
-        flex-wrap: wrap;    
-    }
-
-    .hero-text {
-        margin-bottom: 100px;
-        margin-top: 100px;
-        margin-left: 20px;
-        
-    }
-
-    .socials {
-        display: flex;
-        margin-bottom: 100px;
-        padding-bottom: 0px;
-        margin-left: 20px;
-        justify-content: space-evenly;  
-
-    }
-
-    .social {
-        width: 30px;
-        height: 30px;
-    }
-
-    .hero-text h1 {
-        font-size: 70px;
-        font-weight: 800;
-    }
-
-    .hero-text p {
-        font-size: 24px;        
-    }
-
-    .button {
-        width: 150px;
-        line-height: 30px; 
-        font-size: 22px;
-        }
-
-
-    h2 {
-        font-size: 36px;
-        justify-self: center;
-    }
 }
 
 
-
-
+/*end hero section*/
