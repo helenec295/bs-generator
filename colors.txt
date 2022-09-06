@@ -1,0 +1,25 @@
+mimosa 
+
+#FFCA4B
+
+#EFC050
+
+very light gray #f6f6f6
+
+centering forminator button:
+
+.forminator-button-submit {
+	margin:0 auto;
+	display:block;
+}
+
+orange
+medium FF7A3D
+dark FF5100
+
+very bright eb6422
+
+shevetlehavaweb@gmail.com, lehavahscouts@gmail.com, liatyosef555@gmail.com
+
+drive folder id
+1nhSWFd-YmpkpSu1fnTxqe2xthz98dDas

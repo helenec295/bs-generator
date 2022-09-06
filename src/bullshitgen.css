@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;   
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bullshit .bullshit {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#bullshit .bullshit-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    width: 80%;
+}
+
+#bullshit h1 {
+        font-size: 3rem;
+        font-weight: 300;
+        color: black;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        text-align: center; 
+        font-family: 'Josefin Sans', sans-serif;   
+}
+
+#bullshit h1 span {
+    color: #FFCA4B;
+}
+
+#bullshit .lingo {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;   
+}
+
+#bullshit .bullshit-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    width: 80%;
+}
+    
+    
+#bullshit #fortune {
+    color: black;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #f6f6f6;
+    border: 1px solid #ededed;
+    box-shadow: 5px 5px 5px #505050;
+    width: 100%;
+    display: inline-block;
+    letter-spacing: 0.1rem;
+    align-items: center;
+}
+
+#buttonContainer {
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    margin: 20px auto;
+ }
+
+#fortuneButton {
+    padding: 10px;
+    font-size: 1.5rem;
+    background: #FFCA4B;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+    color: white;    ;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#fortuneButton:hover {
+    color: black;
+    background-color: #EFC050;
+
+}

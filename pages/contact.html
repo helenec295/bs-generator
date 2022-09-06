@@ -8,55 +8,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2decbd281b.js" crossorigin="anonymous"></script>
+
     <title>Contact Me</title>
 </head>
 <body>
-    <div class="container">
-       <h1>Connect With Me</h1>
-       <p>Fill out the form to get in touch</p>
-       <div class="contact-box">
-        <div class="contact-left">
-            <h3>Send your message</h3>
-            <form>
 
-                <div class="input-row">
-                    <div class="input-group">
-                        <label>Name</label> 
-                        <input type="text">
-                    </div>
-                    <div class="input-group">
-                        <label>Email</label> 
-                        <input type="email">
-                    </div>
+    <div class="hero">
+        <h3>Get in touch</h3>
+        <form action="https://formsubmit.co/helen.evenchen@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_next" value="https://helenevenchen.com/thanks.html">
+            <div class="row">
+                <div class="input-group">
+                
+                    <input type="text" name="name" id="name" required> 
+                    <label for="name">Name</label>
+                    
                 </div>
-                <div class="input-row">
-                    <div class="input-group">
-                        <label>Subject</label> 
-                        <input type="text">
-                    </div>
-                    <div class="input-group">
-                        <label>Message</label> 
-                        <input type="text">
-                    </div>
+                <div class="input-group">
+                    
+                    <input type="email" name="email" id="email" required>
+                    <label for="name">Email</label>
+                    
                 </div>
-                <label>Message</label> 
-                <textarea rows="5"></textarea>
 
-                <button type="submit">Send</button>
+            </div>
+            
+            <div class="input-group">
+                
+                <input type="text" name="subject" id="subject" required>
+                <label for="subject">Subject</label>
+                
+            </div>
+            <div class="input-group">
+                
+                <textarea name="message" id="message" rows="8" required></textarea>
+                <label for="message">Message</label>
+                
+            </div>
+            
+            <button type="submit">Send<i class="fa-solid fa-paper-plane"></i></button>
 
-
-            </form>
-
-        </div>
-        <div class="contact-right">
-            <h3>Reach me</h3>
-
-            <table></table>
-
-        </div>
-
-
-       </div>
+        </form>
     </div>
+
+
+
+       
 </body>
 </html>
