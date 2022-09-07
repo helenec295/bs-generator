@@ -161,6 +161,7 @@ p {
 
 }
 
+
 #header .nav-list ul li:hover a {
     color: #FFCA4B;
 }
@@ -169,7 +170,7 @@ p {
     height: 60px;
     width: 60px;
     display: inline-block;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -187,7 +188,7 @@ p {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid white;
     animation: hamburger_puls 1s ease infinite;
 }
 
@@ -195,7 +196,7 @@ p {
     height: 2px;
     width: 30px;
     position: relative;
-    background-color: black;
+    background-color: white;
     z-index: -1;
 
 }
@@ -214,12 +215,12 @@ p {
 
 #header .hamburger .bar::after {
     top: 8px;
-    background-color: black;
+    background-color: white;
 }
 
 #header .hamburger .bar::before {
     bottom: 8px;
-    background-color: black;
+    background-color: white;
 }
 
 #header .hamburger.active .bar::before {
@@ -432,18 +433,23 @@ p {
         height: auto;
         width: fit-content;
         background-color: transparent;
+        
     }
 
     #header .nav-list ul li {
         display: inline-block;
+        
     }
 
     #header .nav-list ul li a {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        color: white;
     } 
 
+    
     #header .nav-list ul a::after {
         display: none;
+        
     }
 }
 
