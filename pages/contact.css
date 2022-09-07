@@ -8,7 +8,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.0.7), #373737), url(helen-evenchen-homepage-banner.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.4), #373737), url(helen-evenchen-homepage-banner.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
