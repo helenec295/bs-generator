@@ -22,6 +22,15 @@ function menuBackground() {
 
 document.addEventListener('scroll', menuBackground);
 
+/* function menuTextColor() {
+    var scroll_position = window.scrollY;
+    if (scroll_position > 250) {
+     header.style.color = "#ffffff";
+    } else {
+     header.style.color = #111111;
+    }
+ } */
+
 // templates my-header - creating a custom element
 
 /* class MyHeader extends HTMLElement {
@@ -51,5 +60,5 @@ document.addEventListener('scroll', menuBackground);
     }
 }
 
-customElements.define('my-header', MyHeader) */
+*/
 

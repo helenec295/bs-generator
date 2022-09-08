@@ -49,7 +49,7 @@ document.addEventListener('scroll', menuBackground);
         `
         
     }
-}
+} */
 
-customElements.define('my-header', MyHeader) */
+customElements.define('my-header', MyHeader)
 
