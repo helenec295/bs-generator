@@ -4,14 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 html {
-    font-size: 1rem;
+    font-size: 10px;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
@@ -563,12 +557,7 @@ p {
     color: white;
 }
 
-
-
 /*end about me section*/
-
-/*contact section*/
-/*end contact section*/
 
 /*footer section*/
 
@@ -586,6 +575,8 @@ p {
 
 #footer h1 {
     color: white;
+    font-size: 3rem;
+    margin-bottom: 30px;
 }
 
 #footer h2 {
@@ -620,9 +611,16 @@ p {
 
 #footer p {
     font-size: 1.1rem;
+    color: white;
+    margin-bottom: 20px;
 }
 
-
+@media only screen and (min-width: 992px) {    
+    #footer h1 {
+        color: white;
+        font-size: 6rem;
+    }    
+}
 
 
 /*end footer section*/
@@ -657,10 +655,7 @@ p {
         padding: 20px 60px;
     }
 
-    h1.section-title {
-        font-size: 4rem;
-    }
-
+    
     #hero h1 {
         font-size: 7rem;
     }
@@ -761,10 +756,6 @@ p {
    #about .col-right h1 {
     margin-top: 50px;
 }
-
-   #footer h1 {
-    font-size: 3rem;
-   }
 
 }
 
