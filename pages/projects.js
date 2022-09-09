@@ -13,10 +13,19 @@ hamburger.addEventListener('click', toggleButton);
 
 function menuBackground() {
    var scroll_position = window.scrollY;
+   let els = document.getElementsByClassName("text-menu");
    if (scroll_position > 250) {
+    for (let t=0;t< els.length;t++){
+        els[t].style.color = "#FFFFFF";
+        els[t].onmouseover = function() {this.style.color='yellow';};
+        els[t].onmouseout = function() {this.style.color='white';};
+    }
     header.style.backgroundColor = "#1f1f1f";
    } else {
     header.style.backgroundColor = "transparent";
+    for (let t=0;t< els.length;t++){
+        els[t].style.color = "#000000";
+    }
    }
 }
 
