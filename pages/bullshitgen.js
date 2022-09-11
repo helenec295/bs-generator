@@ -1,16 +1,12 @@
-// click to see your fortune
+// click to see bullshit
 
-let subject = ["campaigns",
-  "brands",
-  "consumers"]
+let subject = ["campaigns", "brands", "consumers", "customers", "experiences", "audiences", "economies"]
 
-let object = ["beautiful",
-  "effective",
-  "amazing"]
+let object = ["beautiful", "effective", "amazing", "sherable", "engaged", "viral", "sticky", ]
 
 let verb = ["create",
   "enhance",
-  "experience"]
+  "experience", "grow", "imagine"]
 
 let button = document.getElementById('fortuneButton');
 let fortune = document.getElementById('fortune');

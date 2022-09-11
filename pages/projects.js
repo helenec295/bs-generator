@@ -17,14 +17,14 @@ function menuBackground() {
    if (scroll_position > 250) {
     for (let t=0;t< els.length;t++){
         els[t].style.color = "#FFFFFF";
-        els[t].onmouseover = function() {this.style.color='yellow';};
+        els[t].onmouseover = function() {this.style.color='#FFCA4B';};
         els[t].onmouseout = function() {this.style.color='white';};
     }
-    header.style.backgroundColor = "#1f1f1f";
+    header.style.backgroundColor = "rgba(31,31,31,0.5)";
    } else {
     header.style.backgroundColor = "transparent";
     for (let t=0;t< els.length;t++){
-        els[t].style.color = "#000000";
+        els[t].style.color = "black";
     }
    }
 }

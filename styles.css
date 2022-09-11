@@ -59,12 +59,12 @@ p {
 
 .cta {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: white;
     background-color: transparent;
     border: 2px solid #FFCA4B;
-    border-radius: 10px;
-    font-size: 1.5rem;
+    border-radius: 5px;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin-top: 30px;
@@ -321,11 +321,13 @@ p {
 }
 
 #services .service-bottom {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    
 }
 
 #services .service-item {
@@ -378,8 +380,8 @@ p {
     margin-bottom: 10px;
     font-weight: 300;
     text-align: left;
-    font-size: 1.2rem;
-    line-height: 1.9rem;        
+    font-size: 1.4rem;
+    line-height: 3rem;        
 }
 
 #services .service-item a{
@@ -449,7 +451,9 @@ p {
 
 #projects .project-info p {
     color: white;
-    margin-top: 10px;      
+    margin-top: 10px;
+    font-size: 1.3rem; 
+    line-height: 2.5rem;     
 }
 
 #projects .project-image {
@@ -542,7 +546,9 @@ p {
     color: black;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    text-align: justify;
 }
 
 #about .col-right .cta {
@@ -651,10 +657,9 @@ p {
 
 @media only screen and (min-width: 768px) {
     .cta {
-        font-size: 2.5rem;
-        padding: 20px 60px;
+        font-size: 2rem;
+        padding: 10px 30px;
     }
-
     
     #hero h1 {
         font-size: 7rem;
@@ -713,6 +718,7 @@ p {
 
     #about .col-right p {
         text-align: left;
+        font-size: 1.6rem;
     }
 }
 
@@ -741,11 +747,15 @@ p {
     }
 
     #header .nav-list ul li a {
-        font-size: 1rem;
+        font-size: 1.2rem;
     } 
 
     #header .nav-list ul a::after {
         display: none;
+    }
+
+    #hero h1 {
+        font-size: 9rem;
     }
 
     #services .service-bottom .service-item {
