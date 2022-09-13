@@ -486,10 +486,6 @@ p {
     transform: scale(1.1);
 }
 
-#projects .project-item a {
-    color: #FFCA4B;
-}
-
 #projects .cta {
     padding: 5px 10px;
     color: white;
@@ -506,7 +502,7 @@ p {
 }
 
 #projects .cta:hover {
-    color: white;
+    color: #FFCA4B;
     background-color: transparent;
     
 }
