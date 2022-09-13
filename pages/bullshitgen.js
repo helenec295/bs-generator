@@ -44,7 +44,7 @@ hamburger.addEventListener('click', toggleButton);
 function menuBackground() {
    var scroll_position = window.scrollY;
    if (scroll_position > 250) {
-    header.style.backgroundColor = "#1f1f1f";
+    header.style.backgroundColor = "rgba(31,31,31,0.5)";
    } else {
     header.style.backgroundColor = "transparent";
    }
