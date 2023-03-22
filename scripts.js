@@ -1,55 +1,29 @@
-// switches between menu to hamburger menu on mobile
+// click to see bullshit
 
-const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-const header = document.querySelector('.header.container');
+let subject = ["campaigns", "brands", "consumers", "customers", "experiences", "audiences", "economies"]
 
-function toggleButton() {
-    hamburger.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
+let object = ["beautiful", "effective", "amazing", "sherable", "engaged", "viral", "sticky", ]
+
+let verb = ["create", "enhance", "experience", "grow", "imagine"]
+
+let button = document.getElementById('fortuneButton');
+let fortune = document.getElementById('fortune');
+
+function fortuneSelector(){
+  const randomVerb = Math.floor(Math.random() * verb.length);
+  const randomObject = Math.floor(Math.random() * object.length);
+  const randomSubject = Math.floor(Math.random() * subject.length);
+  let randomBulshit = `${verb[randomVerb]} ${object[randomObject]} ${subject[randomSubject]}`;
+  return randomBulshit;
 }
 
-hamburger.addEventListener('click', toggleButton);
+function showFortune(){
+  fortune.innerHTML = fortuneSelector();
+  button.innerHTML = "Make more bullshit";
+  button.style.cursor = "default";
 
-function menuBackground() {
-   var scroll_position = window.scrollY;
-   if (scroll_position > 250) {
-    header.style.backgroundColor = "rgba(31,31,31,0.5)";
-   } else {
-    header.style.backgroundColor = "transparent";
-   }
-}
+  }
 
-document.addEventListener('scroll', menuBackground);
+button.addEventListener('click', showFortune);
 
-// templates my-header - creating a custom element
-
-/* class MyHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-        <section id="header">
-        <div class="header container">
-            <div class="nav-bar">
-                <div class="brand">
-                    <a href="#hero"><img class="logo" src="./src/images/helen-evenchen-logo-white.png"></a>
-                </div>
-                <div class="nav-list">
-                    <div class="hamburger"><div class="bar"></div></div>
-                    <ul>
-                        <li><a href="#hero" data-after="Home">Home</a></li>
-                        <li><a href="#projects" data-after="Projects">Projects</a></li>
-                        <li><a href="#about" data-after="About">About</a></li>
-                        <li><a href="#footer" data-after="Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-       </section> }
-      
-        `
-        
-    }
-} */
-
-customElements.define('my-header', MyHeader)
 
