@@ -1,10 +1,10 @@
 // click to see bullshit
 
-let subject = ["campaigns", "brands", "consumers", "customers", "experiences", "audiences", "economies"]
+let subject = ["campaigns", "brands", "consumers", "customers", "experiences", "audiences", "economies", "products", "services", "solutions", "innovations", "ideas", "opportunities", "systems", "programs", "approaches", "technologies", "concepts", "methods", "platforms", "tools", "strategies", "formulas", "designs"]
 
-let object = ["beautiful", "effective", "amazing", "sherable", "engaged", "viral", "sticky", ]
+let object = ["beautiful", "effective", "amazing", "sherable", "engaged", "viral", "sticky", "new", "improved", "best", "innovative", "reliable", "affordable", "high-quality", "powerful", "comfortable"," stylish", "convenient", "healthy", "delicious", "luxurious", "unique", "sustainable", "exclusive", "easy-to-use", "proven"]
 
-let verb = ["create", "enhance", "experience", "grow", "imagine"]
+let verb = ["create", "enhance", "experience", "grow", "imagine", "buy", "try", "discover", "improve", "boost", "transform", "achieve", "maximize", "win", "join", "upgrade", "get", "learn", "enjoy", "start", "find"]
 
 let button = document.getElementById('fortuneButton');
 let fortune = document.getElementById('fortune');

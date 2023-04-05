@@ -1,184 +1,146 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-html {
-    font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
+html,
+body {
+  background-color: #282c34;
+font-size: 10px;
+  background-color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  flex-wrap: wrap;
+  
 }
 
 
-p {
-    color: black;
-    margin-bottom: 1.6rem;
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("advertising-bs1.jpg");
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+.bullshit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+h1 {
+    font-size: 2.5rem;
     font-weight: 300;
-    text-align: left;
-    font-size: 10px;
-    line-height: 2rem;
-        
-}
-
-.section-title {
-    font-size: 3rem;
-    font-weight: 300;
     color: black;
-    margin-bottom: 10rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center; 
+    margin: 20px 50px 20px 20px;
+}
+
+/* padding: top, right, bottom, left; */
+
+
+h1 span {
+color: #FFCA4B;
+}
+
+.bullshit-info {
+    display: flex;
+    align-items: center;
+    margin: 20px 50px 20px 20px;
+    
+   
+}
+
+.bullshit-info p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: 20px;
+   
+}
+ 
+ .bullshit-results {
+    color: black;
+    font-size: 1.6rem;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border: 1px solid #ededed;
+    box-shadow: 
+     0 1px 1px rgba(0, 0, 0, 0.2), 
+     0 2px 2px rgba(0, 0, 0, 0.2),
+     0 4px 4px rgba(0, 0, 0, 0.2);
+    width: 250px;
     text-align: center;
-
+    margin: 20px 50px 20px 20px;
+    
 }
-
-.section-title span {
-    color: #FFCA4B;
-
-}
-
-.cta {
-    display: inline-block;
+    
+    
+button {
     padding: 10px 30px;
     color: black;
-    background-color: transparent;
+    background-color: #FFCA4B;
     border: 2px solid #FFCA4B;
-    border-radius: 12px;
+    border-radius: 5px;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin-top: 30px;
     transition: 0.3s ease;
     transition-property: background-color, color;
+    box-shadow: 
+    0 1px 1px rgba(0, 0, 0, 0.2), 
+    0 2px 2px rgba(0, 0, 0, 0.2),
+    0 4px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px 50px 20px 20px;
 
 }
 
-.cta:hover {
+button:hover {
     color: white;
     background-color: #FFCA4B;
 
 }
 
 
-/*bullshitgen section*/
-
-.bullshit {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 600px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
-.bullshit-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    justify-items: center;
-    width: 80%;
-}
-
- h1 {
-        font-size: 3rem;
-        font-weight: 300;
-        color: black;
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        text-align: center; 
-        font-family: 'Josefin Sans', sans-serif;   
-}
-
-h1 span {
-    color: #FFCA4B;
-}
-
- .lingo {
-    padding: 20px;
-    text-align: center;
-    color: black;
-    margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2.5rem;   
-}
-
- .bullshit-results {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    justify-items: center;
-    width: 70%;
-}
-    
-    
-#bullshit #fortune {
-    color: black;
-    font-size: 1.75rem;
-    text-align: center;
-    padding: 20px;
-    margin: 30px auto;
-    background-color: #f6f6f6;
-    border: 1px solid #ededed;
-    box-shadow: 5px 5px 5px #505050;
-    width: 100%;
-    display: inline-block;
-    letter-spacing: 0.1rem;
-    align-items: center;
-}
-
-#buttonContainer {
-    margin: auto;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
-    margin: 20px auto;
- }
-
-#fortuneButton {
-    padding: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    width: 300px;
-    text-transform: uppercase;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-/*bullshitgen section*/
-
-/*footer section*/
-
-#footer {
+footer {
     background-color: #1f1f1f;
-
-}
-
-#footer .footer {
-    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
+    gap: 10px;
+
 }
 
 
-
-#footer p {
-    font-size: 1.1rem;
+a {
     color: white;
-    margin-bottom: 20px;
-}
+    margin: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    line-height: 2rem
+  }
 
-@media only screen and (min-width: 992px) {    
-    #footer h1 {
-        color: white;
-        font-size: 6rem;
-    }    
-}
+  a:hover {
+    color: #EFC050;
+  }
 
-/*end footer section*/
+ 
+
+  footer p {
+    font-size: 1.4rem;
+  }
+  
